@@ -1,0 +1,349 @@
+:root {
+  --contact-text: #757575;
+  --category-text: #757575;
+  --nav-text: #212121;
+  --filter-text: #212121;
+  --main-text: #212121;
+  --active: #2196f3;
+  --background-btn-filter: #f5f4fa;
+  --background-footer: #2f303a;
+}
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  color: var(--main-text);
+}
+body ul {
+  list-style-type: none;
+}
+.logo {
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.938em;
+  letter-spacing: 0.03em;
+  color: var(--active);
+}
+.nav-links {
+  list-style-type: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--nav-text);
+}
+.nav-links a:hover {
+  text-decoration: none;
+  color: var(--active);
+}
+.nav-links a:active {
+  text-decoration: none;
+  color: var(--nav-text);
+}
+.nav-links a:focus {
+  text-decoration: none;
+  color: var(--active);
+}
+.nav-links .study-link-active {
+  color: var(--active);
+}
+.nav-links .portafolio-link-active {
+  color: var(--active);
+}
+.email {
+  color: var(--contact-text);
+  text-decoration: none;
+}
+.email:hover {
+  color: var(--active);
+  text-decoration: none;
+}
+.email:active {
+  color: var(--contact-text);
+  text-decoration: none;
+}
+.email:focus {
+  color: var(--active);
+  text-decoration: none;
+}
+.phone {
+  color: var(--contact-text);
+  text-decoration: none;
+}
+.phone:hover {
+  color: var(--active);
+  text-decoration: none;
+}
+.phone:active {
+  color: var(--contact-text);
+  text-decoration: none;
+}
+.phone:focus {
+  color: var(--active);
+  text-decoration: none;
+}
+.footer-global {
+  background-color: var(--background-footer);
+  color: #fff;
+}
+.btn-service {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border-color: var(--background-btn-filter);
+  border-radius: 4px;
+  background-color: var(--background-btn-filter);
+}
+.btn-service:hover {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.btn-service:active {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.btn-service:focus {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter {
+  list-style-type: none;
+}
+.text-filter {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625em;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.filter-btn-all {
+  height: 38px;
+  width: 73px;
+  color: #fff;
+  border-color: var(--active);
+  border-radius: 4px;
+  background-color: var(--active);
+}
+.filter-btn-all:hover {
+  height: 38px;
+  width: 73px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-all:active {
+  height: 38px;
+  width: 73px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-all:focus {
+  height: 38px;
+  width: 73px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-web {
+  height: 38px;
+  width: 128px;
+  border-color: var(--background-btn-filter);
+  border-radius: 4px;
+  background-color: var(--background-btn-filter);
+}
+.filter-btn-web:hover {
+  width: 128px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-web:active {
+  width: 128px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-web:focus {
+  width: 128px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-app {
+  height: 38px;
+  width: 145px;
+  border-color: var(--background-btn-filter);
+  border-radius: 4px;
+  background-color: var(--background-btn-filter);
+}
+.filter-btn-app:hover {
+  width: 145px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-app:active {
+  width: 145px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-app:focus {
+  width: 145px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-design {
+  height: 38px;
+  width: 103px;
+  border-color: var(--background-btn-filter);
+  border-radius: 4px;
+  background-color: var(--background-btn-filter);
+}
+.filter-btn-design:hover {
+  width: 103px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-design:active {
+  width: 103px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-design:focus {
+  width: 103px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-marketing {
+  height: 38px;
+  width: 103px;
+  border-color: var(--background-btn-filter);
+  border-radius: 4px;
+  background-color: var(--background-btn-filter);
+}
+.filter-btn-marketing:hover {
+  width: 103px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-marketing:active {
+  width: 103px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-btn-marketing:focus {
+  width: 103px;
+  height: 38px;
+  color: #fff;
+  border-color: var(--active);
+  background-color: var(--active);
+  cursor: pointer;
+}
+.filter-link {
+  color: var(--filter-text);
+  text-decoration: none;
+}
+.filter-imagen {
+  border: 2px solid #fff;
+}
+.filter-imagen:hover {
+  border: 2px solid var(--active);
+}
+.filter-imagen:active {
+  border: 2px solid #fff;
+}
+.filter-imagen:focus {
+  border: 2px solid var(--active);
+}
+.filter-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.25em;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.filter-title:active {
+  text-decoration: none;
+  color: var(--active);
+}
+.filter-title:hover {
+  text-decoration: none;
+  color: var(--active);
+}
+.filter-title:focus {
+  text-decoration: none;
+  color: var(--active);
+}
+.filter-text {
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.filter-text:active {
+  text-decoration: none;
+  color: var(--active);
+}
+.filter-text:hover {
+  text-decoration: none;
+  color: var(--active);
+}
+.filter-text:focus {
+  text-decoration: none;
+  color: var(--active);
+}
