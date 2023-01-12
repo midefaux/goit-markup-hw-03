@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
-segunda tarea uso de los textos y colores
+tercera tarea modelo de bloques
