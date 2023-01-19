@@ -18,14 +18,22 @@ body ul {
 }
 .container {
   width: 1200px;
-  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .header-container {
   display: flex;
   flex-direction: row;
   height: 80px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 2px solid var(--active);
 }
 .logo {
   text-decoration: none;
@@ -58,24 +66,19 @@ body ul {
   padding-right: 50px;
   display: flex;
 }
-.nav-links a:hover {
-  text-decoration: none;
+.link.active {
   color: var(--active);
 }
-.nav-links a:active {
+.link:active,
+.link:focus {
   text-decoration: none;
   color: var(--nav-text);
 }
-.nav-links a:focus {
+.link:hover {
+  color: var(--active);
   text-decoration: none;
-  color: var(--active);
 }
-.nav-links .study-link-active {
-  color: var(--active);
-}
-.nav-links .portafolio-link-active {
-  color: var(--active);
-}
+
 .email-imagen {
   align-self: flex-start;
   margin-top: 34px;
@@ -146,8 +149,11 @@ body ul {
 .contact-us {
   padding-top: 14px;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .banner {
-  height: 600px;
   background-color: #2f303a;
   display: flex;
   flex-direction: column;
@@ -167,9 +173,9 @@ body ul {
   line-height: 1.875em;
   letter-spacing: 0.06em;
   text-align: center;
-  border-color: var(--background-btn-filter);
-  border-radius: 4px;
-  background-color: var(--background-btn-filter);
+  border-color: var(--active);
+  background-color: var(--active);
+  color: #fff;
   align-self: center;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -182,12 +188,11 @@ body ul {
   letter-spacing: 0.06em;
   text-align: center;
   color: #fff;
-  border-color: var(--active);
+  border-color: 1px solid var(--active);
   background-color: var(--active);
   cursor: pointer;
-  padding: 10px, 32px, 10px, 32px;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .btn-service:active {
   font-size: 16px;
@@ -196,12 +201,11 @@ body ul {
   letter-spacing: 0.06em;
   text-align: center;
   color: #fff;
-  border-color: var(--active);
+  border-color: 1px solid var(--active);
   background-color: var(--active);
   cursor: pointer;
-  padding: 10px, 32px, 10px, 32px;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .btn-service:focus {
@@ -211,12 +215,11 @@ body ul {
   letter-spacing: 0.06em;
   text-align: center;
   color: #fff;
-  border-color: var(--active);
+  border-color: 1px solid var(--active);
   background-color: var(--active);
   cursor: pointer;
-  padding: 10px, 32px, 10px, 32px;
+  padding: 10px 32 px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .characteristics {
   margin: 95px 15px;
@@ -243,6 +246,15 @@ body ul {
   letter-spacing: 0.03em;
   color: var(--characteristics);
 }
+.characteristics h2:hover,
+.characteristics h2:active,
+.characteristics h2:focus,
+.characteristics p:hover,
+.characteristics p:active,
+.characteristics p:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--active);
+}
 .our-activities h2 {
   font-weight: 700;
   font-size: 36px;
@@ -250,12 +262,22 @@ body ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.our-activities h2:active,
+.our-activities h2:focus,
+.our-activities h2:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--active);
+}
 .our-activities ul {
   display: flex;
   justify-content: space-between;
 }
+.our-activities img:active,
+.our-activities img:focus,
+.our-activities img:hover {
+  border: 2px solid var(--active);
+}
 .our-team {
-  height: 648px;
   background-color: #f5f4fa;
 }
 .our-team h2 {
@@ -276,7 +298,14 @@ body ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  border: 1px solid #fff;
 }
+.our-team img::after,
+.our-team img:focus,
+.our-team img:hover {
+  border: 1px solid var(--active);
+}
+
 .our-team h3 {
   font-weight: 500;
   font-size: 16px;
@@ -284,6 +313,18 @@ body ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+.our-team h2:active,
+.our-team h2:focus,
+.our-team h2:hover,
+.our-team h3:active,
+.our-team h3:focus,
+.our-team h3:hover,
+.our-team p:active,
+.our-team p:focus,
+.our-team p:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--active);
 }
 .our-team p {
   font-weight: 400;
@@ -472,12 +513,11 @@ body ul {
 .filter-items {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
   gap: 15px;
 }
 .filter-items li {
-  width: 370px;
-  border: 1px solid #eeeeee;
+  width: 360px;
+  border-bottom: 2px solid #eeeeee;
   text-align: left;
 }
 .filter-link {
@@ -504,35 +544,21 @@ body ul {
   text-align: left;
   padding-left: 24px;
 }
-.filter-title:active {
-  text-decoration: none;
-  color: var(--active);
-}
+.filter-title:active,
+.filter-title:focus,
 .filter-title:hover {
-  text-decoration: none;
-  color: var(--active);
-}
-.filter-title:focus {
-  text-decoration: none;
-  color: var(--active);
+  text-decoration: underline;
+  text-decoration-color: var(--active);
 }
 .filter-text {
   font-size: 16px;
-  line-height: 1.875em;
-  letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
   padding-left: 24px;
 }
-.filter-text:active {
-  text-decoration: none;
-  color: var(--active);
-}
-.filter-text:hover {
-  text-decoration: none;
-  color: var(--active);
-}
+.filter-text:active,
+.filter-text:hover,
 .filter-text:focus {
-  text-decoration: none;
-  color: var(--active);
+  text-decoration: underline;
+  text-decoration-color: var(--active);
 }
